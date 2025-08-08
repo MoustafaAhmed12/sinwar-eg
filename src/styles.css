@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import "tailwindcss";
+@import "animate.css/animate.min.css";
+
+
+@theme {
+  --font-cairo: "Cairo", sans-serif;
+  --color-primary: #3C74E8;
+  --color-secondary: #0ABEF2
+}
+
+html, body {
+    font-family: "Cairo", sans-serif !important;
+
+}
+
+
+.active {
+  @apply text-[#06295b] after:absolute after:bottom-0 after:right-0 after:w-full after:h-0.5 after:bg-[#06295b]
+}
