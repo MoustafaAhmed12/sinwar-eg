@@ -14,14 +14,14 @@ export const routes: Routes = [
     path: 'about',
     component: AboutComponent,
   },
-  {
-    path: 'services',
-    component: ServicesComponent,
-  },
-  {
-    path: 'portfolio',
-    component: PortfolioComponent,
-  },
+  // {
+  //   path: 'services',
+  //   component: ServicesComponent,
+  // },
+  // {
+  //   path: 'portfolio',
+  //   component: PortfolioComponent,
+  // },
   {
     path: 'contact',
     component: ContactComponent,
