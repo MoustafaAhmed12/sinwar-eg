@@ -1,3 +1,13 @@
+
+@if (
+  isLoading()
+) {
+  <!-- Overlay Loading -->
+<div  class="fixed inset-0 bg-black/60 flex flex-col items-center justify-center text-white z-[9999]">
+  <div class="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin mb-3"></div>
+  <p class="text-lg font-semibold">جاري إرسال رسالتك...</p>
+</div>
+}
 <main class="flex-grow">
   <section class="relative py-28 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-primary via-blue-800 to-primary z-0"></div>
@@ -20,11 +30,14 @@
           اليوم للحصول على المساعدة التي تحتاجها.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-          <a href="#contact-form"
-            class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-all">تواصل
-            معنا الآن</a><a href="tel:+201070444917"
+          <button 
+          (click)="scrollToSection()"
+            class="bg-white text-primary cursor-pointer hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-all">تواصل
+            معنا الآن</button>
+            <a href="tel:+201070444917"
             class="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold text-lg transition-all">اتصل
-            بنا مباشرة</a>
+            بنا مباشرة
+          </a>
         </div>
       </div>
     </div>
@@ -91,7 +104,7 @@
                       <span >الرقم الموحد:</span>
                       <span dir="ltr">+201070444917</span>
                     </a>
-                    <a target="_blank"  href="https://wa.me/+201070444916" class="flex items-center gap-x-2">
+                    <a target="_blank"  href="https://wa.me/+201070444917" class="flex items-center gap-x-2">
                       <span >واتساب:</span>
                       <span dir="ltr">+201070444917</span>
                     </a>
@@ -131,9 +144,9 @@
         </div>
         <div class="lg:w-2/3 p-10 bg-white rounded-3xl shadow-lg border border-gray-100">
           <h3 class="text-2xl font-bold text-primary mb-8">أرسل لنا رسالة</h3>
-          <form class="space-y-8">
+          <form  class="space-y-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="space-y-3">
+              <div class="flex flex-col gap-y-2">
                 <label
                   class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700 font-bold text-base"
                   for=":r0:-form-item">الاسم</label>
@@ -149,10 +162,11 @@
                   <input
                     class="flex h-10 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-4 py-4 pl-4 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50/30"
                     placeholder="أدخل اسمك" name="name" id=":r0:-form-item"
+                                      [(ngModel)]="name"
                     aria-describedby=":r0:-form-item-description" aria-invalid="false" value="" />
                 </div>
               </div>
-              <div class="space-y-3">
+              <div class="flex flex-col gap-y-2">
                 <label
                   class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700 font-bold text-base"
                   for=":r1:-form-item">البريد الإلكتروني</label>
@@ -168,10 +182,11 @@
                   <input type="email"
                     class="flex h-10 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-4 py-4 pl-4 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50/30"
                     placeholder="أدخل بريدك الإلكتروني" name="email" id=":r1:-form-item"
+                                      [(ngModel)]="email"
                     aria-describedby=":r1:-form-item-description" aria-invalid="false" value="" />
                 </div>
               </div>
-              <div class="space-y-3">
+              <div class="flex flex-col gap-y-2">
                 <label
                   class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700 font-bold text-base"
                   for=":r2:-form-item">رقم الهاتف</label>
@@ -188,46 +203,28 @@
                   <input type="tel"
                     class="flex h-10 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-4 py-4 pl-4 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50/30"
                     placeholder="أدخل رقم هاتفك" name="phone" id=":r2:-form-item"
+                                      [(ngModel)]="phone"
                     aria-describedby=":r2:-form-item-description" aria-invalid="false" value="" />
                 </div>
               </div>
-              <div class="space-y-3">
+              <div class="flex flex-col gap-y-2">
                 <label
                   class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700 font-bold text-base"
-                  for=":r3:-form-item">الموضوع</label><button type="button" role="combobox" aria-controls="radix-:r4:"
-                  aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" data-placeholder=""
-                  class="flex h-10 items-center justify-between text-sm ring-offset-background placeholder:text-muted-foreground focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 w-full px-4 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50/30"
-                  id=":r3:-form-item" aria-describedby=":r3:-form-item-description" aria-invalid="false">
-                  <span style="pointer-events: none">اختر الموضوع</span><svg xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                    aria-hidden="true">
-                    <path d="m6 9 6 6 6-6"></path>
-                  </svg></button><select aria-hidden="true" tabindex="-1" style="
-                    position: absolute;
-                    border: 0px;
-                    width: 1px;
-                    height: 1px;
-                    padding: 0px;
-                    margin: -1px;
-                    overflow: hidden;
-                    clip: rect(0px, 0px, 0px, 0px);
-                    white-space: nowrap;
-                    overflow-wrap: normal;
-                  ">
-                  <option value="service">استفسار عن الخدمات</option>
-                  <option value="quote">طلب عرض سعر</option>
-                  <option value="support">الدعم الفني</option>
-                  <option value="career">التوظيف</option>
-                  <option value="other">أخرى</option>
-                </select>
+                  for=":r2:-form-item">الموضوع</label>
+                <div class="relative">
+                  <input type="text"
+                    class="flex h-10 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full  p-4  border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50/30"
+                    placeholder="الموضوع" name="subject" id=":r2:-form-item"
+                                      [(ngModel)]="subject"
+                    aria-describedby=":r2:-form-item-description" aria-invalid="false" value="" />
+                </div>
               </div>
             </div>
-            <div class="space-y-3">
+              <div class="flex flex-col gap-y-2">
               <label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-700 font-bold text-base"
                 for=":r5:-form-item">الرسالة</label>
               <div class="relative">
-                <div class="absolute right-4 top-8 text-gray-400">
+                <div class="absolute right-4 top-4 text-gray-400">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-message-square w-5 h-5">
@@ -237,12 +234,14 @@
                 <textarea
                   class="flex min-h-[80px] text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full px-4 py-4 pl-4 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50/30"
                   placeholder="اكتب رسالتك هنا..." name="message" rows="5" id=":r5:-form-item"
+                  [(ngModel)]="message"
                   aria-describedby=":r5:-form-item-description" aria-invalid="false"></textarea>
               </div>
             </div>
             <button
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 bg-gradient-to-r from-primary to-blue-700 hover:opacity-90 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg"
-              type="submit">
+            (click)="sendMessage()"
+              class="inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 bg-gradient-to-r from-primary to-blue-700 hover:opacity-90 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg"
+              >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-send ml-2 h-5 w-5">
