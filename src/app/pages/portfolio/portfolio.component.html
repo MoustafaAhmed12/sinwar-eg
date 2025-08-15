@@ -1,6 +1,6 @@
 <main class="flex-grow ">
   <section class="bg-gradient-to-r from-[#06295b] to-[#0a3d7f] py-20 text-white relative overflow-hidden">
-    <div class="absolute top-0 left-0 w-full h-full">
+    <div data-aos="zoom-in" class="absolute top-0 left-0 w-full h-full">
       <div
         class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZjEwIj48cGF0aCBkPSJNMTI4MCAwTDY0MCA3MCAwIDB2MTQwbDY0MC03MCAxMjgwIDcwVjB6Ii8+PC9nPjwvc3ZnPg==')] bg-center bg-no-repeat bg-cover opacity-10">
       </div>
@@ -11,7 +11,7 @@
       <div class="animate-float-fast absolute -bottom-20 right-1/4 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl">
       </div>
     </div>
-    <div class="container mx-auto px-4 text-center relative z-10">
+    <div data-aos="zoom-in" class="max-w-[1320px] mx-auto px-4 text-center relative z-10">
       <div class="inline-block mb-6 rounded-full bg-white/10 px-4 py-1.5 backdrop-blur-sm"><span
           class="text-sm font-medium text-white">مشاريعنا المنجزة</span></div>
       <h1 class="text-4xl md:text-6xl font-bold mb-6">معرض <span class="text-gradient">أعمالنا</span></h1>
@@ -20,15 +20,15 @@
         لعملائنا في مختلف المجالات والقطاعات</p>
     </div>
   </section>
-  <section class="py-24 bg-gradient-to-b from-white to-gray-50 relative">
+  <section #servicesSection class="py-24 bg-gradient-to-b from-white to-gray-50 relative">
     <div class="absolute inset-0 overflow-hidden z-0">
       <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent">
       </div>
       <div class="absolute -left-24 top-1/4 w-72 h-72 rounded-full border-[30px] border-blue-100/10"></div>
       <div class="absolute -right-24 top-2/3 w-96 h-96 rounded-full border-[40px] border-blue-100/10"></div>
     </div>
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-16">
+    <div class="max-w-[1320px] mx-auto px-4 relative z-10">
+      <div #servicesTitle class="text-center mb-16">
         <div class="inline-flex items-center bg-blue-50 text-[#06295b] px-4 py-2 rounded-full font-bold mb-6"><svg
             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -42,505 +42,210 @@
         <p class="text-gray-600 max-w-2xl mx-auto">مجموعة من المشاريع المتميزة التي قمنا بتنفيذها في مختلف المجالات
           والقطاعات</p>
       </div>
-      <div class="flex flex-wrap justify-center gap-3 mb-16"><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-[#06295b] text-white shadow-md">الكل</button><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">أنظمة
-          إدارية</button><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">أنظمة
-          مراقبة</button><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">تقنية
-          مالية</button><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">متاجر</button><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">أنظمة
-          صحية</button><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">تعليم</button><button
-          class="px-5 py-2.5 rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">تحليلات</button>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- <div class="flex flex-wrap justify-center gap-3 mb-16"><button
+          class="px-5 py-2.5 cursor-pointer rounded-full transition-all duration-300 font-medium bg-[#06295b] text-white shadow-md">الكل</button>
+        <button
+          class="px-5 py-2.5 cursor-pointer rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">
+          مواقع إلكترونية
+        </button>
+        <button
+          class="px-5 py-2.5 cursor-pointer rounded-full transition-all duration-300 font-medium bg-white text-[#06295b] border border-gray-200 hover:border-blue-300 hover:bg-blue-50">
+          أنظمة محاسبية
+        </button>
+
+      </div> -->
+      <div class="grid grid-cols-1 md:grid-cols-2  gap-8">
+
+
         <div
+        #servicesCards
           class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
+              <div class="relative h-56 md:h-72 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
             <div
               class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110">
               <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
             </div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-chart-column w-12 h-12 text-white">
-                  <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                  <path d="M18 17V9"></path>
-                  <path d="M13 17V5"></path>
-                  <path d="M8 17v-3"></path>
-                </svg></div>
+
+              <img src="alssalem.png" alt="alssalem" class="w-full h-full">
             </div>
             <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
               <div class="text-white text-xs font-medium">مشروع منجز</div>
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">تميز بلس</h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">منصة متكاملة لإدارة المشاريع والتميز المؤسسي تساعد الشركات على
-              تحقيق أهدافها بكفاءة</p>
+            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">منصة السالم
+              التعليمية</h3>
+            <p class="text-gray-600 mb-5 leading-relaxed">منصة تعليمية مبتكرة تُعنى بتأهيل الطلاب لاجتياز اختبارات
+              القدرات والتحصيلي بتميز، من خلال محتوى تدريبي متدرّج وحديث، يغطي نماذج وأسئلة مشابهة للاختبار الفعلي،
+              ويقدم شروحات مبسطة بأسلوب تفاعلي، بالإضافة إلى قياس الأداء أولًا بأول وتقديم تقارير تساعد الطالب على معرفة
+              مستواه والتطور باستمرار.</p>
+
             <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">إدارة
-                مشاريع</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تميز
-                مؤسسي</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">لوحات
-                تحكم</span></div>
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">
+                تحصيل ممتاز</span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تدريب
+                احترافي</span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">
+                تحديث مستمر</span></div>
             <div class="mt-5 flex justify-end">
-              <div
+              <a href="https://alssalem.com/"
                 class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 rotate-180 mr-1 group-hover:mr-2 transition-all" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
+                </svg></a>
             </div>
           </div>
         </div>
+
+
         <div
+        #servicesCards
           class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
+          <div class="relative h-56 md:h-72 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
             <div
               class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110">
               <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
             </div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-map w-12 h-12 text-white">
-                  <path
-                    d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
-                  </path>
-                  <path d="M15 5.764v15"></path>
-                  <path d="M9 3.236v15"></path>
-                </svg></div>
+
+              <img src="academiaglobe.png" alt="academiaglobe" class="w-full h-full">
             </div>
             <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
               <div class="text-white text-xs font-medium">مشروع منجز</div>
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">VisiPoint</h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">نظام متطور للحضور والمراقبة مصمم خصيصًا للمشاريع والمؤتمرات
-              والمعارض</p>
+            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">أكاديـمـيـا
+              جلـــــوب</h3>
+            <p class="text-gray-600 mb-5 leading-relaxed">منصة بحثية متخصصة تقدم حلولًا أكاديمية متكاملة للباحثين وطلاب
+              الدراسات العليا، بدءًا من إعداد وترجمة وتحكيم الأبحاث العلمية، مرورًا بالتحليل الإحصائي والاستشارات،
+              ووصولًا إلى النشر في مجلات دولية مصنَّفة مثل ISI وSCOPUS.
+              تساعد الباحث على الوصول إلى نشر علمي رصين يدعم مسيرته الأكاديمية ويواكب المعايير العالمية.</p>
             <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">أنظمة
-                مراقبة</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">إدارة
-                المؤتمرات</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">إدارة
-                الحضور</span></div>
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">ترجمة
+                أكاديمية</span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">
+                تجويد الأبحاث</span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">
+                نشر دولي</span></div>
             <div class="mt-5 flex justify-end">
-              <div
+              <a target="_blank" href="https://academiaglobe.com/"
                 class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ms-1 rotate-180 group-hover:mr-2 transition-all" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
+
+
         <div
+        #servicesCards
           class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
-            <div
-              class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url(&quot;/attached_assets/neolep-C1mrqQYD.png&quot;);">
-              <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-            </div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-scale w-12 h-12 text-white">
-                  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
-                  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
-                  <path d="M7 21h10"></path>
-                  <path d="M12 3v18"></path>
-                  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
-                </svg></div>
-            </div>
-            <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
-              <div class="text-white text-xs font-medium">مشروع منجز</div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">وثيق</h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">نظام متكامل لإدارة مكاتب المحاماة يشمل إدارة القضايا والعملاء
-              والمستندات</p>
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">إدارة
-                قانونية</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">إدارة
-                مستندات</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">مكاتب
-                المحاماة</span></div>
-            <div class="mt-5 flex justify-end">
-              <div
-                class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
-            <div
-              class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url(&quot;/attached_assets/citc-BY9W0GXA.png&quot;);">
-              <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-            </div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-wallet w-12 h-12 text-white">
-                  <path
-                    d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1">
-                  </path>
-                  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
-                </svg></div>
-            </div>
-            <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
-              <div class="text-white text-xs font-medium">مشروع منجز</div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">ذخر</h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">مشروع تقنية مالية متكامل يسهل الاستثمار والادخار والمعاملات
-              المالية</p>
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تقنية
-                مالية</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">استثمار</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">خدمات
-                مالية</span></div>
-            <div class="mt-5 flex justify-end">
-              <div
-                class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
-            <div
-              class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url(&quot;/attached_assets/sab-CvLRFmq0.png&quot;);">
-              <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-            </div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-star w-12 h-12 text-white">
-                  <polygon
-                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                  </polygon>
-                </svg></div>
-            </div>
-            <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
-              <div class="text-white text-xs font-medium">مشروع منجز</div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">ترتب</h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">منصة مخصصة للكماليات تجمع العلامات التجارية المميزة في مكان
-              واحد</p>
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تسوق
-                إلكتروني</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">كماليات</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">عروض
-                حصرية</span></div>
-            <div class="mt-5 flex justify-end">
-              <div
-                class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
-            <div
-              class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url(&quot;/attached_assets/emkan-gYlHw46n.png&quot;);">
-              <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-            </div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-shopping-bag w-12 h-12 text-white">
-                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
-                  <path d="M3 6h18"></path>
-                  <path d="M16 10a4 4 0 0 1-8 0"></path>
-                </svg></div>
-            </div>
-            <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
-              <div class="text-white text-xs font-medium">مشروع منجز</div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">ميني ماركت
-            </h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">نظام متكامل للربط بين التاجر والعميل النهائي لتسهيل عمليات
-              البيع والشراء</p>
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تجارة
-                إلكترونية</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">ربط
-                تجار</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">خدمات
-                توصيل</span></div>
-            <div class="mt-5 flex justify-end">
-              <div
-                class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
-            <div
-              class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url(&quot;/attached_assets/ibe-Dd16pr9E.png&quot;);">
-              <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-            </div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-heart-pulse w-12 h-12 text-white">
-                  <path
-                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-                  </path>
-                  <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path>
-                </svg></div>
-            </div>
-            <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
-              <div class="text-white text-xs font-medium">مشروع منجز</div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">دكتور أورنج
-            </h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">نظام شامل لإدارة المنظمات الطبية والمستشفيات يشمل إدارة
-              المواعيد والمرضى</p>
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">رعاية
-                صحية</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">إدارة
-                مستشفيات</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">خدمات
-                طبية</span></div>
-            <div class="mt-5 flex justify-end">
-              <div
-                class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
+          <div class="relative h-56 md:h-72 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
             <div
               class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110">
               <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
             </div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-users w-12 h-12 text-white">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg></div>
+
+              <img src="globestonehills.png" alt="globestonehills" class="w-full h-full">
             </div>
             <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
               <div class="text-white text-xs font-medium">مشروع منجز</div>
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">جيل الغد</h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">منصة تعليمية متكاملة تربط بين الطلاب والمعلمين وأولياء الأمور
-            </p>
+            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">جلـــــوب ستون
+              هليز</h3>
+            <p class="text-gray-600 mb-5 leading-relaxed">Globe Stone Hills هي شركة رائدة في إنتاج وتصدير كربونات
+              الكالسيوم (الحجر الجيري عالي النقاء) من صعيد مصر. تُعتمد جهودها على تقنيات طحن عالية الجودة ومنشآت متقدمة
+              لضمان توازن مثالي بين النقاء والسطوع، ما يجعل موادها مرغوبة في الأسواق العالمية للصناعات المتعددة، مع
+              التزام بصقل المواد بدقة لتلبية احتياجات العملاء.</p>
             <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تعليم
-                إلكتروني</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">إدارة
-                مدارس</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تعليم
-                عن بعد</span></div>
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">
+                نقاء – صعيد مصر</span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تصدير
+                – عالمي
+              </span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">جودة
+                – احتراف
+              </span></div>
             <div class="mt-5 flex justify-end">
-              <div
+              <a href="https://globestonehills.com/?lang=ar"
                 class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 mr-1 rotate-180 group-hover:mr-2 transition-all" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
+                </svg></a>
             </div>
           </div>
         </div>
+
+
+
         <div
+        #servicesCards
           class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           style="cursor: pointer;">
-          <div class="relative h-56 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
+          <div class="relative h-56 md:h-72 overflow-hidden bg-gradient-to-br from-[#06295b] to-[#0a3d7f]">
             <div
               class="absolute inset-0 bg-center bg-cover transform transition-transform duration-500 group-hover:scale-110">
               <div class="absolute inset-0 bg-[#06295b] opacity-50 group-hover:opacity-30 transition-opacity"></div>
             </div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-trending-up w-12 h-12 text-white">
-                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                  <polyline points="16 7 22 7 22 13"></polyline>
-                </svg></div>
+
+              <img src="jahbaz.png" alt="jahbaz" class="w-full h-full">
             </div>
             <div class="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm rounded-full py-1 px-3">
               <div class="text-white text-xs font-medium">مشروع منجز</div>
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">أفق للتحليلات
-            </h3>
-            <p class="text-gray-600 mb-5 leading-relaxed">منصة تحليلية متقدمة لمساعدة الشركات على اتخاذ قرارات مدروسة
-              بناءً على البيانات</p>
+            <h3 class="text-xl font-bold mb-3 text-[#06295b] group-hover:text-blue-700 transition-colors">جهبذ وجهتك نحو
+              بحث علمي متميز</h3>
+            <p class="text-gray-600 mb-5 leading-relaxed">Jahbaz Academy هي منصة بحثية متكاملة تقدم خدمات أكاديمية
+              احترافية للباحثين والطلاب، تشمل الترجمة العلمية، تحسين جودة الأبحاث، إعداد المقترحات، الإطار النظري،
+              التحليل الإحصائي، وخدمات النشر في مجلات دولية مثل ISI وSCOPUS. تهدف إلى دعم الباحثين في كل مراحل البحث
+              العلمي لضمان مساهماتهم في المجتمع العلمي العالمي.</p>
             <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100"><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">تحليل
-                بيانات</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">ذكاء
-                أعمال</span><span
-                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">مؤشرات
-                أداء</span></div>
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">ترجمة
+                – نشر
+              </span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">
+                احترافية – أكاديمية</span><span
+                class="bg-blue-50 text-[#06295b] text-sm py-1 px-3 rounded-full font-medium transition-all hover:bg-[#06295b]/10">
+                دولي – شامل</span></div>
             <div class="mt-5 flex justify-end">
-              <div
+              <a href="https://jahbazacademy.com/index.php"
                 class="inline-flex items-center text-[#06295b] font-medium group-hover:text-blue-700 transition-colors">
-                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 group-hover:mr-2 transition-all"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                عرض المشروع<svg xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 mr-1 rotate-180 group-hover:mr-2 transition-all" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg></div>
+                </svg></a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
-  <section class="py-24 bg-gray-50 relative overflow-hidden">
-    <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-    <div class="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-    <div class="absolute -left-16 md:-left-8 top-12 w-32 h-32 border-[10px] border-blue-100/30 rounded-full"></div>
-    <div class="absolute -right-16 md:-right-8 bottom-12 w-32 h-32 border-[10px] border-blue-100/30 rounded-full"></div>
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-16">
-        <div class="inline-flex items-center bg-blue-50 text-[#06295b] px-4 py-2 rounded-full font-bold mb-6"><svg
-            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-chart-no-axes-gantt w-5 h-5 ml-2">
-            <path d="M8 6h10"></path>
-            <path d="M6 12h9"></path>
-            <path d="M11 18h7"></path>
-          </svg>منهجية احترافية</div>
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">كيف <span class="text-[#06295b]">نعمل</span> معًا</h2>
-        <p class="max-w-2xl mx-auto text-gray-600">نتبع منهجية عمل احترافية ومنظمة تضمن تحقيق أهداف مشاريعنا بأعلى
-          معايير الجودة</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <div
-            class="w-16 h-16 rounded-full bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white flex items-center justify-center text-lg font-bold mb-6">
-            01</div>
-          <h3 class="text-xl font-bold mb-3 text-[#06295b]">الاستماع والفهم</h3>
-          <p class="text-gray-600 leading-relaxed">نبدأ بجلسة استماع متعمق لفهم رؤيتك وأهدافك. نحلل متطلباتك ونحدد
-            التحديات والفرص المحتملة لضمان وضوح المسار.</p>
-        </div>
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <div
-            class="w-16 h-16 rounded-full bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white flex items-center justify-center text-lg font-bold mb-6">
-            02</div>
-          <h3 class="text-xl font-bold mb-3 text-[#06295b]">التخطيط والتصميم</h3>
-          <p class="text-gray-600 leading-relaxed">نقوم بإعداد خطة عمل تفصيلية وتصميم نماذج أولية لعرضها عليك. نستخدم
-            أحدث التقنيات لتقديم تصميم يتجاوز توقعاتك.</p>
-        </div>
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <div
-            class="w-16 h-16 rounded-full bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white flex items-center justify-center text-lg font-bold mb-6">
-            03</div>
-          <h3 class="text-xl font-bold mb-3 text-[#06295b]">التنفيذ والتطوير</h3>
-          <p class="text-gray-600 leading-relaxed">بعد موافقتك على التصميم، نبدأ مرحلة التنفيذ والتطوير، مع تقديم
-            تحديثات دورية. نختبر المشروع باستمرار لضمان سلاسة العمل.</p>
-        </div>
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <div
-            class="w-16 h-16 rounded-full bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white flex items-center justify-center text-lg font-bold mb-6">
-            04</div>
-          <h3 class="text-xl font-bold mb-3 text-[#06295b]">الاختبار والتحسين</h3>
-          <p class="text-gray-600 leading-relaxed">نجري اختبارات شاملة للتأكد من جودة المشروع وأدائه المثالي. نعمل على
-            تحسين وتطوير المشروع بناءً على ملاحظاتك وتوجيهاتك.</p>
-        </div>
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <div
-            class="w-16 h-16 rounded-full bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white flex items-center justify-center text-lg font-bold mb-6">
-            05</div>
-          <h3 class="text-xl font-bold mb-3 text-[#06295b]">الإطلاق</h3>
-          <p class="text-gray-600 leading-relaxed">بعد الانتهاء من كافة المراحل، نقوم بإطلاق المشروع ونقدم لك جميع
-            الوثائق اللازمة والتدريب المناسب لاستخدام وإدارة المشروع.</p>
-        </div>
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-          <div
-            class="w-16 h-16 rounded-full bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white flex items-center justify-center text-lg font-bold mb-6">
-            06</div>
-          <h3 class="text-xl font-bold mb-3 text-[#06295b]">الدعم والمتابعة</h3>
-          <p class="text-gray-600 leading-relaxed">نقدم خدمات الدعم الفني والصيانة الدورية للمشروع على مدار الساعة.
-            نتابع أداء المشروع ونقترح تحسينات مستمرة لتطوير أدائه.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="py-24 bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white relative overflow-hidden">
+
+
+
+
+  <section  class="py-24 bg-gradient-to-r from-[#06295b] to-[#0a3d7f] text-white relative overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
       <div
         class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZjEwIj48cGF0aCBkPSJNMTI4MCAwTDY0MCA3MCAwIDB2MTQwbDY0MC03MCAxMjgwIDcwVjB6Ii8+PC9nPjwvc3ZnPg==')] bg-center bg-no-repeat bg-cover opacity-10">
@@ -550,14 +255,15 @@
           <polygon fill="rgba(255,255,255,0.1)" points="0,0 100,0 100,100"></polygon>
         </svg></div>
     </div>
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-16">
+    <div  #section class="max-w-[1320px] mx-auto px-4 relative z-10">
+      <div #title class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">إنجازاتنا <span class="text-blue-300">بالأرقام</span></h2>
         <p class="max-w-2xl mx-auto opacity-90">نفخر بتحقيق نتائج ملموسة في مختلف المشاريع التي عملنا عليها على مدار
           السنوات الماضية</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div   #card class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div
+      
           class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/5 hover:border-white/20 transition-all hover:translate-y-[-5px]">
           <div class="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"><svg
               class="w-10 h-10 text-blue-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -569,6 +275,7 @@
           <p class="text-xl text-blue-100 text-center">مشروع منجز</p>
         </div>
         <div
+      
           class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/5 hover:border-white/20 transition-all hover:translate-y-[-5px]">
           <div class="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"><svg
               class="w-10 h-10 text-blue-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -588,6 +295,7 @@
           <p class="text-xl text-blue-100 text-center">عميل سعيد</p>
         </div>
         <div
+      
           class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/5 hover:border-white/20 transition-all hover:translate-y-[-5px]">
           <div class="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"><svg
               class="w-10 h-10 text-blue-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -608,6 +316,7 @@
           <p class="text-xl text-blue-100 text-center">جائزة وتكريم</p>
         </div>
         <div
+      
           class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/5 hover:border-white/20 transition-all hover:translate-y-[-5px]">
           <div class="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"><svg
               class="w-10 h-10 text-blue-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -627,34 +336,5 @@
       </div>
     </div>
   </section>
-  <section class="py-24 bg-white relative overflow-hidden">
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern-black"></div>
-    </div>
-    <div class="absolute top-0 right-0 w-40 h-40 md:w-64 md:h-64 bg-blue-100 rounded-full opacity-20 blur-3xl -z-10">
-    </div>
-    <div class="absolute bottom-0 left-0 w-40 h-40 md:w-72 md:h-72 bg-blue-100 rounded-full opacity-20 blur-3xl -z-10">
-    </div>
-    <div class="container mx-auto px-4 text-center relative">
-      <div
-        class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-xl border border-gray-100 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#06295b]/5 to-[#0a3d7f]/5 rounded-xl"></div>
-        <div class="relative">
-          <h2
-            class="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#06295b] to-[#0a3d7f]">
-            هل لديك مشروع تريد تنفيذه؟</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-6"></div>
-          <p class="text-gray-600 md:text-lg mb-8 max-w-2xl mx-auto">نحن جاهزون لمساعدتك في تحويل فكرتك إلى مشروع ناجح.
-            فريق من الخبراء بانتظارك للاستماع إلى أفكارك وتحويلها إلى حقيقة.</p><a href="/contact"><button
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-8 py-6 bg-gradient-to-r from-[#06295b] to-[#0a3d7f] hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 text-lg font-medium rounded-full">تواصل
-              معنا الآن<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clip-rule="evenodd"></path>
-              </svg></button></a>
-        </div>
-      </div>
-    </div>
-  </section>
+
 </main>
